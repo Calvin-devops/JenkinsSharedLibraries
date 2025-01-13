@@ -1,5 +1,10 @@
 def call(String stageName){
+  {
   
+  if ("${stageName}" == "clone")
+     {
+       sh "git clone"
+     }
   if ("${stageName}" == "Build")
      {
        sh "mvn clean package"
